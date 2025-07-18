@@ -14,7 +14,7 @@ RUN npm install
 
 # Copy all files to /app
 COPY . .
-
+RUN npm rebuild vite && npm run build
 # Build assets (Vite)
 RUN npm run build
 
